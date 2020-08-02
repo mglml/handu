@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script src="../js/libs/jquery.min.js"></script>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <script src="../bootstrap/jquery-3.4.1.slim.min.js"></script>
+    <script src="../bootstrap/popper.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../fontawesome/all.min.js"></script>
+    <link rel="stylesheet" href="../fontawesome/all.min.css" />
+    <link rel="stylesheet" href="../fontawesome/fontawesome.min.css" />
+    <link rel="stylesheet" href="../css/loginPage.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="../js/logFiles/loginValidation.js"></script>
+  </head>
+  <body>
+    <div class="container-form">
+      <img src="../images/login/login.svg" alt="" / class="svg">
+      <form>
+        <li><img src="../images/login/user.png" alt="" /></li>
+        <div class="user-name">
+          <i class="fas fa-user"></i>
+          <input type="text" name="name" id="name" required />
+        </div>
+        <div class="user-password">
+          <i class="fas fa-lock"></i>
+          <input type="password" name="password" id="pwd" required />
+          <i
+            class="far fa-eye"
+            onclick="showHidePwd()"
+            style="cursor: pointer;"
+          ></i>
+        </div>
+        <a href="#">Forget Password ?</a>
+        <br />
+        <input type="checkbox" name="checkbox" id="remember" />
+        <span>Remember Me</span>
+        <br />
+        <button type="submit" onclick="loginSubmit();">
+          Log In <i class="fas fa-sign-in-alt"></i>
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

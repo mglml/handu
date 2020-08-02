@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script src="../js/libs/jquery.min.js"></script>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <script src="../bootstrap/jquery-3.4.1.slim.min.js"></script>
+    <script src="../bootstrap/popper.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../fontawesome/all.min.js"></script>
+    <link rel="stylesheet" href="../fontawesome/all.min.css" />
+    <link rel="stylesheet" href="../fontawesome/fontawesome.min.css" />
+    <link rel="stylesheet" href="../css/signupPage.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  </head>
+  <body>
+    <div class="container-form">
+      <img src="../images/login/login.svg" alt="" / class="svg">
+      <form>
+        <li><img src="../images/login/user.png" alt="" /></li>
+        <div class="user-name">
+          <i class="fas fa-user"></i>
+          <input type="text" name="name" id="name" required />
+        </div>
+        <div class="user-email">
+          <i class="fas fa-envelope-open"></i>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <div class="user-password">
+          <i class="fas fa-lock"></i>
+          <input
+            type="password"
+            name="password"
+            id="pwd password"
+            class="pwd"
+            required
+          />
+          <i
+            class="far fa-eye"
+            onclick="showHidePwd()"
+            style="cursor: pointer;"
+          ></i>
+        </div>
+        <div class="user-password">
+          <i class="fas fa-lock"></i>
+          <input
+            type="password"
+            name="password"
+            id="cpwd"
+            class="pwd"
+            required
+          />
+          <i
+            class="far fa-eye"
+            onclick="showHidePwd()"
+            style="cursor: pointer;"
+          ></i>
+        </div>
+        <input type="checkbox" name="checkbox" id="tndc" required />
+        <span>Terms and Contitions</span>
+        <br />
+        <button type="button" onclick="submitUserData()">
+          Sign Up <i class="fas fa-user-plus"></i>
+        </button>
+      </form>
+    </div>
+    <div class="error-block">
+      <h3>Please check the password not same. give same password.</h3>
+    </div>
+    <script src="../js/logFiles/signUp.js"></script>
+  </body>
+</html>

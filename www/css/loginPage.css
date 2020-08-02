@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(to right, #8e9eab, #eef2f3);
+}
+.svg {
+  width: 60%;
+}
+.container-form li {
+  list-style: none;
+}
+form {
+  position: absolute;
+  left: 65%;
+  margin: auto;
+  top: 25%;
+  border: 1px solid #ccc;
+  background-color: rgb(165, 165, 165);
+  padding: 20px;
+  height: 320px;
+  border-radius: 6px;
+  box-shadow: 2px 2px 5px #4b4c4d;
+}
+form li img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 35%;
+  top: -50px;
+  border: 1px solid rgb(110, 110, 110);
+  border-radius: 50%;
+  background-color: rgb(109, 108, 108);
+}
+.user-name {
+  margin-top: 40px;
+}
+.user-name,
+.user-password {
+  padding: 15px 25px;
+}
+form a {
+  margin-left: 15%;
+  color: #eb1700;
+  font-weight: 500;
+}
+.user-name input,
+.user-password input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid;
+  padding: 5px;
+  background-color: rgb(165, 165, 165);
+}
+.user-name input:focus,
+.user-password input:focus {
+  border-bottom: 2px solid #4caf50;
+  padding: 5px;
+  background-color: rgb(165, 165, 165);
+}
+form #remember {
+  margin-left: 10%;
+  margin-top: 15px;
+}
+span {
+  font-weight: 600;
+  color: #2c2c2c;
+}
+button {
+  position: relative;
+  left: 25px;
+  width: 200px;
+  padding: 5px;
+  margin-top: 10px;
+  background-color: #e74c3c;
+  border: 0;
+  font-weight: 700;
+  color: #ccc;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px #4b4c4d;
+}
+button:active {
+  opacity: 0.5;
+}
+@media (max-width: 1024px) {
+  form {
+    position: absolute;
+    left: 45%;
+    margin: auto;
+    top: 15%;
+    border: 1px solid #ccc;
+    background-color: rgb(165, 165, 165);
+    padding: 20px;
+    height: 320px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px #4b4c4d;
+  }
+  .svg {
+    width: 40%;
+    margin: 25px 0px 0px 20px;
+  }
+}
+@media (max-width: 770px) {
+  body {
+    background-color: #8e9eab;
+  }
+  .svg {
+    display: none;
+  }
+  form {
+    position: absolute;
+    left: 30%;
+    margin: auto;
+    top: 30%;
+    border: 1px solid #ccc;
+    background-color: rgb(165, 165, 165);
+    padding: 20px;
+    height: 320px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px #4b4c4d;
+  }
+}

@@ -1,0 +1,30 @@
+i {
+    display: inline-block;
+    background: url("../images/index_images/header.webp") no-repeat;
+}
+
+.search_tet {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 14px;
+    left: 18px;
+    background-position: 0px -518px;
+}
+
+.shopCart {
+    width: 20px;
+    height: 20px;
+    margin-top: 8px;
+    margin-left: 24px;
+    background-position: 0px -148px;
+}
+
+.point{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 26px;
+    top: 10px;
+    background-position: 0px -50px;
+}

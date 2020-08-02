@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <script src="../js/libs/jquery.min.js"></script>
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css" />
+    <script src="../../bootstrap/jquery-3.4.1.slim.min.js"></script>
+    <script src="../../bootstrap/popper.min.js"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../fontawesome/all.min.js"></script>
+    <link rel="stylesheet" href="../../fontawesome/all.min.css" />
+    <link rel="stylesheet" href="../../fontawesome/fontawesome.min.css" />
+    <link rel="stylesheet" href="../../css/userCss/user1.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  </head>
+  <body onload="fo()">
+    <header>
+      <div class="menu-btn"><i class="fas fa-bars"></i></div>
+      <div class="cart">
+        <a href="#"><i class="fas fa-cart-plus"></i></a>
+      </div>
+      <!-- navbar of the web page -->
+      <nav>
+        <!-- Brand Logo -->
+        <div class="logo">
+          <a href="#"><img src="../../images/dotstore.png" alt="logo" /></a>
+        </div>
+        <!-- Brand Logo End -->
+        <!-- Search Bar -->
+        <div class="s-block">
+          <div class="input-group mb-3 search">
+            <input
+              type="text"
+              class="form-control search-bar"
+              placeholder="Search Here..."
+            />
+          </div>
+          <button class="search-btn" type="button">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+        <!-- Search Bar End -->
+        <!-- right menu -->
+        <ul class="right-menu">
+          <li class="link">
+            <a href="#"><i class="fas fa-user"></i> </a>
+            <ul id="user-info">
+              <li>user</li>
+              <li>user</li>
+              <li>user</li>
+              <li>user</li>
+              <li>user</li>
+            </ul>
+            <span style="color: #515c6b;">|</span>
+            <a href="../../index.html" style="font-size: medium;"
+              >Log Out <i class="fas fa-sign-out-alt"></i
+            ></a>
+          </li>
+          <li class="link">
+            <a href="#"><i class="fas fa-cart-plus"></i></a>
+          </li>
+        </ul>
+        <!-- right menu end -->
+      </nav>
+
+      <!-- Header block end -->
+      <div class="container-fluid details-block show">
+        <div class="log-sign">
+          <li class="link">
+            <a href="#"><i class="fas fa-user"></i></a>
+            /
+            <a href="../../index.html"
+              >Log Out <i class="fas fa-user-plus"></i
+            ></a>
+          </li>
+        </div>
+        <li><a href="../assets/men.html">Men's</a></li>
+        <li><a href="../assets/women.html">Women's</a></li>
+        <li><a href="../assets/kids.html">Kid's</a></li>
+        <li><a href="../assets/mobile.html">Mobile's</a></li>
+        <li><a href="../assets/aboutus.html">About</a></li>
+      </div>
+    </header>
+    <!--Script files -->
+    <main>
+      <!-- Slide Images Block -->
+      <div class="container slideImg">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators"></ol>
+          <div class="carousel-inner slide-images"></div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <!-- Slide Images Block End -->
+      <!-- sample men's cloths  -->
+      <section class="container-fluid main-product">
+        <div class="men-head">
+          <h2>Men's Wear</h2>
+          <div class="show-more">
+            <a href="../assets/men.html"
+              >Show More <i class="fas fa-chevron-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="container-fluid men-product-block men-user"></div>
+        <div class="women-head">
+          <h2>Women's Wear</h2>
+          <div class="show-more">
+            <a href="../assets/women.html"
+              >Show More <i class="fas fa-chevron-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="container-fluid women-product-block women-user"></div>
+        <div class="kids-head">
+          <h2>Kid's Wear</h2>
+          <div class="show-more">
+            <a href="../assets/kids.html"
+              >Show More <i class="fas fa-chevron-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="container-fluid kids-product-block kid-user"></div>
+        <div class="mobiles-head">
+          <h2>Mobile's</h2>
+          <div class="show-more">
+            <a href="../assets/mobile.html"
+              >Show More <i class="fas fa-chevron-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="container-fluid mobiles-product-block mob-user"></div>
+      </section>
+      <!-- sample men's cloths -->
+    </main>
+    <!-- Footer of the site -->
+    <footer class="container-fluid footer">
+      <section class="container footer-block">
+        <div class="footer-details-block">
+          <ul>
+            <p>Get to know</p>
+            <li><a href="../assets/aboutus.html">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press Releases</a></li>
+            <li><a href="#">Amazon Cares</a></li>
+            <li><a href="#">Gift a Smile</a></li>
+          </ul>
+          <ul>
+            <p>HELP</p>
+            <li><a href="#">Payments</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Cancellaton & Return</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Report</a></li>
+          </ul>
+          <ul>
+            <p>POLICY</p>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Terms Of Use</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">EPR Compliance</a></li>
+          </ul>
+          <ul>
+            <p>SOCIAL</p>
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-youtube-square"></i></a>
+            </li>
+          </ul>
+
+          <ul>
+            <p>Mail Us:</p>
+            <li>Dot Store Internet Private Limited</li>
+            <li>Buildings Alyssa, Begonia & Clove Embassy Tech Village,</li>
+            <li>Outer Ring Road, Devarabeesanahalli Village,</li>
+            <li>Benguluru,560103,</li>
+            <li>Karnataka,INDIA</li>
+          </ul>
+          <ul>
+            <p>Registered Office Address:</p>
+            <li>Dot Store Internet Private Limited</li>
+            <li>Buildings Alyssa, Begonia & Clove Embassy Tech Village,</li>
+            <li>Outer Ring Road, Devarabeesanahalli Village,</li>
+            <li>Benguluru,560103,</li>
+            <li>Karnataka,INDIA</li>
+            <li>CIN : U51109KA2012PTC066107</li>
+            <li>Telephone: 1800 208 9898</li>
+          </ul>
+        </div>
+      </section>
+      <div class="cr"><p>&copy; www.dotstore.com</p></div>
+    </footer>
+    <!--script files-->
+    <script>
+      document.querySelector(".menu-btn").addEventListener("click", () => {
+        document.querySelector(".details-block").classList.toggle("show");
+      });
+    </script>
+    <script src="../js/userJs/slideshow1.js"></script>
+    <script src="../js/userJs/menMain1.js"></script>
+    <script src="../js/userJs/womenMain1.js"></script>
+    <script src="../js/userJs/kidsMain1.js"></script>
+    <script src="../js/userJs/mobileMain1.js"></script>
+    <script src="../js/loginValidation.js"></script>
+  </body>
+</html>
